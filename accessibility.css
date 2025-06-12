@@ -1,0 +1,242 @@
+/* Accessibility Toolbar */
+.accessibility-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    box-shadow: var(--shadow);
+    z-index: 1000;
+    width: 100%;
+}
+
+/* Adjust main content to account for toolbar */
+body {
+    padding-top: 4rem;
+}
+
+/* Ensure navbar stays above toolbar */
+.navbar {
+    position: fixed;
+    top: 3.5rem;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    background: var(--white);
+}
+
+/* Adjust main content padding to account for both toolbar and navbar */
+main, .chat-section, .feedback-section, .tutorials-section, .blog-section {
+    padding-top: 7rem;
+}
+
+.toolbar-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.toolbar-section label {
+    font-weight: 600;
+    color: var(--primary-color);
+    white-space: nowrap;
+}
+
+.toolbar-section select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: var(--white);
+    cursor: pointer;
+    min-width: 100px;
+}
+
+.toolbar-section select:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.voice-toggle {
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.3s ease;
+    white-space: nowrap;
+}
+
+.voice-toggle:hover {
+    background: #2d5a40;
+}
+
+.voice-toggle.active {
+    background: var(--accent-color);
+}
+
+/* Google Translate Styles */
+#google_translate_element {
+    display: none;
+}
+
+.goog-te-gadget {
+    font-family: inherit !important;
+    font-size: 0 !important;
+}
+
+.goog-te-gadget .goog-te-combo {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: var(--white);
+    cursor: pointer;
+    font-size: 14px !important;
+}
+
+.goog-te-gadget .goog-te-combo:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Font Size Classes */
+html {
+    font-size: 16px;
+}
+
+body.small {
+    font-size: 14px;
+}
+
+body.small * {
+    font-size: 0.875rem;
+}
+
+body.small h1 {
+    font-size: 1.75rem;
+}
+
+body.small h2 {
+    font-size: 1.5rem;
+}
+
+body.small h3 {
+    font-size: 1.25rem;
+}
+
+body.small .nav-links a {
+    font-size: 0.875rem;
+}
+
+body.medium {
+    font-size: 16px;
+}
+
+body.medium * {
+    font-size: 1rem;
+}
+
+body.medium h1 {
+    font-size: 2rem;
+}
+
+body.medium h2 {
+    font-size: 1.75rem;
+}
+
+body.medium h3 {
+    font-size: 1.5rem;
+}
+
+body.medium .nav-links a {
+    font-size: 1rem;
+}
+
+body.large {
+    font-size: 18px;
+}
+
+body.large * {
+    font-size: 1.125rem;
+}
+
+body.large h1 {
+    font-size: 2.25rem;
+}
+
+body.large h2 {
+    font-size: 2rem;
+}
+
+body.large h3 {
+    font-size: 1.75rem;
+}
+
+body.large .nav-links a {
+    font-size: 1.125rem;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .accessibility-toolbar {
+        border-bottom: 2px solid #000;
+    }
+
+    .toolbar-section select,
+    .goog-te-gadget .goog-te-combo {
+        border: 2px solid #000;
+    }
+
+    .voice-toggle {
+        border: 2px solid #000;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .voice-toggle,
+    .toolbar-section select {
+        transition: none;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .accessibility-toolbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    .toolbar-section {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .toolbar-section select {
+        flex: 1;
+        max-width: 150px;
+    }
+
+    .voice-toggle {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Adjust navbar position for mobile */
+    .navbar {
+        top: 8rem;
+    }
+
+    /* Adjust main content padding for mobile */
+    main, .chat-section, .feedback-section, .tutorials-section, .blog-section {
+        padding-top: 12rem;
+    }
+} 

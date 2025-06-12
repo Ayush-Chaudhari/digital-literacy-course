@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials - Digital Literacy Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="accessibility.css">
+    <link rel="stylesheet" href="tutorials.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Translate API -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <h1>Digital Literacy Hub</h1>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="tutorials.html" class="active">Tutorials</a>
+            <a href="chat.html">AI Chat</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="blog.html">Blog</a>
+        </div>
+        <button class="mobile-menu" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Tutorials Header -->
+    <header class="tutorials-header" data-aos="fade-up">
+        <h1>Digital Tutorials</h1>
+        <p>Step-by-step guides to help you master digital tools</p>
+    </header>
+
+    <!-- Tutorial Categories -->
+    <section class="tutorial-categories" data-aos="fade-up">
+        <div class="category-filters">
+            <button class="category-btn active" data-category="all" aria-pressed="true">All Tutorials</button>
+            <button class="category-btn" data-category="basics" aria-pressed="false">Digital Basics</button>
+            <button class="category-btn" data-category="communication" aria-pressed="false">Communication</button>
+            <button class="category-btn" data-category="security" aria-pressed="false">Security</button>
+            <button class="category-btn" data-category="productivity" aria-pressed="false">Productivity</button>
+        </div>
+    </section>
+
+    <!-- Tutorials Grid -->
+    <section class="tutorials-grid">
+        <!-- Digital Basics Tutorials -->
+        <article class="tutorial-card" data-category="basics" data-aos="fade-up">
+            <div class="tutorial-image">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                     alt="Smartphone basics tutorial">
+            </div>
+            <div class="tutorial-content">
+                <h2>Smartphone Basics</h2>
+                <p>Learn the essential features of your smartphone and how to use them effectively.</p>
+                <ul class="tutorial-features">
+                    <li><i class="fas fa-clock"></i> 15 minutes</li>
+                    <li><i class="fas fa-signal"></i> Beginner</li>
+                </ul>
+                <a href="#" class="start-tutorial-btn" aria-label="Start Smartphone Basics tutorial">Start Tutorial</a>
+            </div>
+        </article>
+
+        <article class="tutorial-card" data-category="basics" data-aos="fade-up">
+            <div class="tutorial-image">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                     alt="Internet safety tutorial">
+            </div>
+            <div class="tutorial-content">
+                <h2>Internet Safety</h2>
+                <p>Essential tips and practices to stay safe while browsing the internet.</p>
+                <ul class="tutorial-features">
+                    <li><i class="fas fa-clock"></i> 20 minutes</li>
+                    <li><i class="fas fa-signal"></i> Beginner</li>
+                </ul>
+                <a href="#" class="start-tutorial-btn" aria-label="Start Internet Safety tutorial">Start Tutorial</a>
+            </div>
+        </article>
+
+        <!-- Communication Tutorials -->
+        <article class="tutorial-card" data-category="communication" data-aos="fade-up">
+            <div class="tutorial-image">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                     alt="Video calling tutorial">
+            </div>
+            <div class="tutorial-content">
+                <h2>Video Calling</h2>
+                <p>Master video calling apps to stay connected with family and friends.</p>
+                <ul class="tutorial-features">
+                    <li><i class="fas fa-clock"></i> 25 minutes</li>
+                    <li><i class="fas fa-signal"></i> Intermediate</li>
+                </ul>
+                <a href="#" class="start-tutorial-btn" aria-label="Start Video Calling tutorial">Start Tutorial</a>
+            </div>
+        </article>
+
+        <!-- Security Tutorials -->
+        <article class="tutorial-card" data-category="security" data-aos="fade-up">
+            <div class="tutorial-image">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                     alt="Password security tutorial">
+            </div>
+            <div class="tutorial-content">
+                <h2>Password Security</h2>
+                <p>Learn how to create and manage strong passwords for your accounts.</p>
+                <ul class="tutorial-features">
+                    <li><i class="fas fa-clock"></i> 15 minutes</li>
+                    <li><i class="fas fa-signal"></i> Beginner</li>
+                </ul>
+                <a href="#" class="start-tutorial-btn" aria-label="Start Password Security tutorial">Start Tutorial</a>
+            </div>
+        </article>
+
+        <!-- Productivity Tutorials -->
+        <article class="tutorial-card" data-category="productivity" data-aos="fade-up">
+            <div class="tutorial-image">
+                <img src="https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                     alt="Digital organization tutorial">
+            </div>
+            <div class="tutorial-content">
+                <h2>Digital Organization</h2>
+                <p>Organize your digital files and photos for easy access.</p>
+                <ul class="tutorial-features">
+                    <li><i class="fas fa-clock"></i> 30 minutes</li>
+                    <li><i class="fas fa-signal"></i> Intermediate</li>
+                </ul>
+                <a href="#" class="start-tutorial-btn" aria-label="Start Digital Organization tutorial">Start Tutorial</a>
+            </div>
+        </article>
+    </section>
+
+    <!-- Progress Tracking -->
+    <section class="progress-section" data-aos="fade-up">
+        <h2>Your Learning Progress</h2>
+        <div class="progress-cards">
+            <div class="progress-card">
+                <h3>Completed Tutorials</h3>
+                <p class="progress-number">0</p>
+            </div>
+            <div class="progress-card">
+                <h3>Learning Streak</h3>
+                <p class="progress-number">0 days</p>
+            </div>
+            <div class="progress-card">
+                <h3>Total Learning Time</h3>
+                <p class="progress-number">0 minutes</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@digitalliteracyhub.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Digital Literacy Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="accessibility.js"></script>
+    <script src="tutorials.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            once: true,
+            disable: 'mobile'
+        });
+    </script>
+</body>
+</html> 

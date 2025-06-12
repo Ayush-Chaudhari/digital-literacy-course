@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tips Blog - Digital Literacy Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="accessibility.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Translate API -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <h1>Digital Literacy Hub</h1>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="tutorials.html">Tutorials</a>
+            <a href="chat.html">AI Chat</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="blog.html" class="active">Blog</a>
+        </div>
+        <button class="mobile-menu" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Blog Header -->
+    <header class="blog-header" data-aos="fade-up">
+        <h1>Digital Tips Blog</h1>
+        <p>Weekly insights and guides to help you navigate the digital world</p>
+    </header>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories" data-aos="fade-up">
+        <div class="category-filters">
+            <button class="category-btn active" data-category="all">All Topics</button>
+            <button class="category-btn" data-category="security">Security</button>
+            <button class="category-btn" data-category="smartphone">Smartphone</button>
+            <button class="category-btn" data-category="communication">Communication</button>
+            <button class="category-btn" data-category="privacy">Privacy</button>
+        </div>
+    </section>
+
+    <!-- Blog Articles -->
+    <section class="blog-articles">
+        <article id="security" class="blog-article" data-category="security" data-aos="fade-up">
+            <div class="article-image">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                     alt="Online security tips">
+            </div>
+            <div class="article-content">
+                <div class="article-meta">
+                    <span class="category">Security</span>
+                    <span class="date">March 15, 2024</span>
+                </div>
+                <h2>Essential Online Security Tips for Everyone</h2>
+                <p>In today's digital world, staying safe online is more important than ever. Here are some essential tips to protect yourself and your data:</p>
+                <ul>
+                    <li>Use strong, unique passwords for each account</li>
+                    <li>Enable two-factor authentication whenever possible</li>
+                    <li>Keep your software and devices updated</li>
+                    <li>Be cautious of suspicious emails and links</li>
+                    <li>Use a reliable antivirus program</li>
+                </ul>
+                <p>Remember, taking these simple steps can significantly improve your online security and protect your personal information.</p>
+            </div>
+        </article>
+
+        <article id="smartphone" class="blog-article" data-category="smartphone" data-aos="fade-up">
+            <div class="article-image">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                     alt="Smartphone basics">
+            </div>
+            <div class="article-content">
+                <div class="article-meta">
+                    <span class="category">Smartphone</span>
+                    <span class="date">March 8, 2024</span>
+                </div>
+                <h2>Smartphone Basics: A Beginner's Guide</h2>
+                <p>New to smartphones? Don't worry! This guide will help you master the essential features of your device:</p>
+                <ul>
+                    <li>Understanding your home screen and apps</li>
+                    <li>Making and receiving calls</li>
+                    <li>Sending text messages and using messaging apps</li>
+                    <li>Taking photos and videos</li>
+                    <li>Connecting to Wi-Fi and managing data usage</li>
+                </ul>
+                <p>With these basics under your belt, you'll be using your smartphone like a pro in no time!</p>
+            </div>
+        </article>
+
+        <article id="video-calling" class="blog-article" data-category="communication" data-aos="fade-up">
+            <div class="article-image">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                     alt="Video calling guide">
+            </div>
+            <div class="article-content">
+                <div class="article-meta">
+                    <span class="category">Communication</span>
+                    <span class="date">March 1, 2024</span>
+                </div>
+                <h2>Video Calling Made Easy: Stay Connected with Loved Ones</h2>
+                <p>Video calling has become an essential way to stay connected. Here's how to get started:</p>
+                <ul>
+                    <li>Choosing the right video calling app</li>
+                    <li>Setting up your camera and microphone</li>
+                    <li>Making your first video call</li>
+                    <li>Tips for better video call quality</li>
+                    <li>Managing privacy settings</li>
+                </ul>
+                <p>Video calls can bring you closer to family and friends, no matter where they are in the world.</p>
+            </div>
+        </article>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter" data-aos="fade-up">
+        <div class="newsletter-content">
+            <h2>Stay Updated with Digital Tips</h2>
+            <p>Subscribe to our weekly newsletter for the latest digital literacy tips and guides.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Enter your email" required aria-label="Email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@digitalliteracyhub.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Digital Literacy Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="accessibility.js"></script>
+    <script src="blog.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            once: true,
+            disable: 'mobile'
+        });
+    </script>
+</body>
+</html> 
